@@ -7,7 +7,7 @@ module.exports = {
     ganache: {
       url: "HTTP://127.0.0.1:7545",
       // change private key
-      accounts:['e879e272a634c5dcfa3cc33de1908d07f19d134df944001842f1ef5f17d5cefd']
+      accounts:['655b640903509b6403e297106a0c8e160fdc3e740aea07f9493db38d6e7dc75c']
     }
   },
 };
