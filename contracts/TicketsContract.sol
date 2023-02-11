@@ -11,8 +11,8 @@ contract TicketsContract is ERC721Enumerable {
     string public _baseUriExtention = ".json";
     uint256 public maxSupply; 
 
-    address SyncEventContractAddress;
-    address SocietyWalletAddress;
+    address public SyncEventContractAddress;
+    address public SocietyWalletAddress;
 
     event Attest(address indexed to, uint256 indexed tokenId);
     event Revoke(address indexed to, uint256 indexed tokenId);

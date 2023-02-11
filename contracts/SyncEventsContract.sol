@@ -6,7 +6,7 @@ import "./TicketsContract.sol";
 contract SyncEventsContract {
     // mapping (address=>address) public NftContractDeployedBySociety;
     mapping(address => address) public SocietyAdressOfNftContract; // nft Contract => SocietyAdress
-    address admin;
+    address public admin;
     event TicketIssued(
         address indexed TicketContract,
         uint256 indexed TicketId,
@@ -59,6 +59,8 @@ contract SyncEventsContract {
             _contractName,
             _symbol
         );
+
+        SocietyAdressOfNftContract[address(_newTicketContract)] = _societyWalletAddress;
         emit TicketContractDeployed(
             address(_newTicketContract),
             _societyWalletAddress,
