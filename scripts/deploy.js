@@ -11,11 +11,9 @@ const TicketContractJson = require('../artifacts/contracts/TicketsContract.sol/T
 
 async function main() {
 
+
   
-  const provider = new ethers.providers.JsonRpcProvider("HTTP://127.0.0.1:7545");
-  const defaultSigner = provider.getSigner();
-  
-  const defaultAddress = "0xbeF23c266d0Add729EC776460bF85c932E7a9805";
+  const defaultAddress = "0x84e2be4caac1534601F597f674Db7Be819Ca239F";
 
 
   const Lock = await hre.ethers.getContractFactory("SyncEventsContract");
